@@ -16,7 +16,7 @@ exports.handler = function (event, context, callback) {
 			'class': {
 				DataType: 'String',
 				StringValue: 'class2'
-			},
+			}
 		},
 		MessageStructure: 'String',
 		TopicArn: 'arn:aws:sns:us-east-1:480964559519:new_topicU'
@@ -24,12 +24,12 @@ exports.handler = function (event, context, callback) {
 		.then(data => {
 			// your code goes here
 
-			console.log("Published to sqs" ,data)
+			console.log("Published to sqs", data)
 		})
 		.catch(err => {
 			// error handling goes here
 
-			console.log("Error" , err);
+			console.log("Error", err);
 		});
 
 
